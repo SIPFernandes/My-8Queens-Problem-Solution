@@ -3,14 +3,9 @@ import java.util.Scanner;
 public class Main {
 	public static void main (String [] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
-		//String str = sc.next();
-		String str = "02415367";
+		String str = sc.next();
+		//String str = "02415367"; //exemple of input each index is a row, each number is that row respective column
 		MySolution s = new MySolution();
-		//int[] m = {1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0};
-		//int[] m = {1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1};
-		//int[] m = {1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0};
-		//int[] m = {0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0};
-		//Board a = new Board(m);
 		Board a = new Board(str);
 		long inicio = System.currentTimeMillis();
 		Board w = s.simpleBacktrackingPermuted(a);
